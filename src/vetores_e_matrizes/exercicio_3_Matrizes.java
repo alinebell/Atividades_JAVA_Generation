@@ -9,7 +9,11 @@ a) Uma matriz M1 cujos elementos serão as somas dos elementos
 de mesma posição das matrizes N1 e N2;
 b) Uma matriz M2 cujos elementos serão as diferenças dos elementos 
 de mesma posição das matrizes N1 e N2.
-*/ 
+*/ 		
+		/*O código abaixo também poderia ser:
+		  int [][] N1 = {{8,7,3,5,3,9}, {4,8,7,10,9,15}, {7,10,5,7,8,9}, {15,20,74,9,12,10}}
+		  int [][] N2 = {{5,4,3,2,1,7}, {2,5,4,9,8,7}, {3,2,1,4,5,6}, {9,8,7,6,5,4}} */
+		
 		int[][] N1 = new int[4][6];
 		int[][] N2 = new int[4][6];
 		int[][] M1 = new int[4][6];
