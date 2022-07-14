@@ -4,29 +4,24 @@ classe, em seguida crie um objeto patinete, defina as instancias deste objeto e
 apresente as informações deste objeto no console.*/
 
 public class patinete {
-	String cor;
-	String modelo;
-	boolean freioLigado;
-	double centimetros;
+	//declaração dos atributos da classe
+	private String cor;
+	private String modelo;
+	private boolean freio;
+	private double altura;
 	
-	void anda()
+	//método construtor
+	public patinete(String cor,String modelo,boolean freio,double altura)
 	{
-		System.out.println("O patinete está andando...");
-	}
-	void regulaAltura(double quantidade)
-	{
-		double alturaNova = this.centimetros+quantidade;
-		this.centimetros = alturaNova;
+		this.cor=cor;
+		this.modelo=modelo;
+		this.freio=freio;
+		this.altura=altura;
+		
 	}
 	
-	void freiar()
-	{
-		if(this.freioLigado == true)
-			System.out.println("O patinete está com o freio ligado!");
-		else
-			System.out.println("O freio está desligado, atenção!");
+	public void imprimirInfo() {
+		System.out.println("\nO Patinete possui o modelo "
+	+modelo+" na cor "+cor+" e tem a altura de "+altura+" centímetros.");
 	}
-
-	
-	
 }
