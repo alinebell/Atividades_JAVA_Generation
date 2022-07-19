@@ -4,9 +4,9 @@ public class funcionario {
 	
 	private String nome;
 	private String cpf;
-	public String sexo;
-	public int filhos;
-	public String regime;
+	private String sexo;
+	private int filhos;
+	private String regime;
 	
 
 	public funcionario(String nome, String cpf,String sexo,int filhos,String regime)
